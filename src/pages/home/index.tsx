@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
-const Home: React.FC = () => {
+const Home: React.FC = ({ children }) => {
   const comments = useLoaderData();
 
   return <div className="text-red-500">{JSON.stringify(comments)}</div>;
